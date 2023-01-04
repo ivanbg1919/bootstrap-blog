@@ -22,3 +22,8 @@
 .card-color {
     background-color: #BAC25E;
 }
+
+.align-items-center {
+    align-items: center !important;
+    margin-top: 40px;
+}
