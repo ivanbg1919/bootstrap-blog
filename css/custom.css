@@ -1,0 +1,29 @@
+.hero-image {        
+    background: linear-gradient(
+            rgba(0,0,0, 0.3),
+            rgba(0,0,0, 0.8)   
+    ),
+    url('../img/cook-bg.jpg');
+    background-attachment: fixed;  
+    height: 550px;
+    background-position: bottom center;    
+    background-repeat: no-repeat;    
+    background-size: cover;   
+}
+
+.first-color {
+    background-color: #005B4B;
+}
+
+.text-color {
+    color: #fff;
+}
+
+.card-color {
+    background-color: #BAC25E;
+}
+
+.align-items-center {
+    align-items: center !important;
+    margin-top: 40px;
+}

@@ -11,116 +11,155 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top first-color">  <!-- navbar-dark bg-dark -->
         <div class="container">
-            <a class="navbar-brand" href="#!">Kuvar</a>
+            <a class="navbar-brand" href="#!">Cook & Recipes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Recipes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <!-- Page header with logo and tagline-->
-    <header class="py-5 bg-light border-bottom mb-4">
-        <div class="container">
-            <div class="text-center my-5">
-                <h1 class="fw-bolder">Kuvar - Recepti</h1>
-                <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
-            </div>
-        </div>
-    </header>
-    <!-- Page content-->
-    <div class="container">
-        <div class="row">
-            <!-- Blog entries-->
-            <div class="col-lg-12">
-                <!-- Featured blog post-->
-
-                <!-- Nested row for non-featured blog posts-->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- Blog post-->
-                        <div class="card mb-4">
-                            <a href="#!"><img class="card-img-top"
-                                    src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">January 1, 2022</div>
-                                <h2 class="card-title h4">Post Title</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reiciendis aliquid atque, nulla.</p>
-                                <a class="btn btn-primary" href="#!">Read more →</a>
-                            </div>
-                        </div>
-                        <!-- Blog post-->
-                        <div class="card mb-4">
-                            <a href="#!"><img class="card-img-top"
-                                    src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">January 1, 2022</div>
-                                <h2 class="card-title h4">Post Title</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reiciendis aliquid atque, nulla.</p>
-                                <a class="btn btn-primary" href="#!">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- Blog post-->
-                        <div class="card mb-4">
-                            <a href="#!"><img class="card-img-top"
-                                    src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">January 1, 2022</div>
-                                <h2 class="card-title h4">Post Title</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reiciendis aliquid atque, nulla.</p>
-                                <a class="btn btn-primary" href="#!">Read more →</a>
-                            </div>
-                        </div>
-                        <!-- Blog post-->
-                        <div class="card mb-4">
-                            <a href="#!"><img class="card-img-top"
-                                    src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">January 1, 2022</div>
-                                <h2 class="card-title h4">Post Title</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
-                                <a class="btn btn-primary" href="#!">Read more →</a>
-                            </div>
-                        </div>
+    </nav>    
+   <!-- Hero -->
+    <div class="p-5 text-center bg-image rounded-3 hero-image">
+            
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Get inspired
+                            and prepare something good!</h1>
+                        <h4 class="mb-3">Holiday And Seasonal Recipes</h4>
+                        <a class="btn btn-outline-light btn-lg" href="#!" role="button">Recipes</a>
                     </div>
                 </div>
-                <!-- Pagination-->
-                <nav aria-label="Pagination">
-                    <hr class="my-0" />
-                    <ul class="pagination justify-content-center my-4">
-                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
-                                aria-disabled="true">Newer</a></li>
-                        <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                        <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">15</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">Older</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+           
     </div>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <!-- Hero --> 
+    <!-- Page content-->   
+    <div class="container col-lg-12 text-center my-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3">
+                <h3 class="card-header card-color">Cold Appetizers</h3>
+                <div class="card-body">
+                  <h5 class="card-title">Recipe Collections</h5>
+                  <h6 class="card-subtitle text-muted">Get Recipe</h6>
+                </div>
+                <img src="img/sendwich.jpg" class="d-block user-select-none" width="100%" height="100%"  style="font-size:1.125rem;text-anchor:middle">         
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+                <div class="card-footer text-muted">
+                  2 days ago
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+                <h3 class="card-header card-color">Hot Appetizers</h3>
+                <div class="card-body">
+                  <h5 class="card-title">Recipe Collections</h5>
+                  <h6 class="card-subtitle text-muted">Get Recipe</h6>
+                </div>                
+                <img src="img/stuffed-tomatoes.jpg" class="d-block user-select-none" width="100%" height="100%"  style="font-size:1.125rem;text-anchor:middle">   
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+                <div class="card-footer text-muted">
+                  2 days ago
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+                <h3 class="card-header card-color">Main Course</h3>
+                <div class="card-body">
+                  <h5 class="card-title">Recipe Collections</h5>
+                  <h6 class="card-subtitle text-muted">Get Recipe</h6>
+                </div>
+                <img src="img/fish.jpg" class="d-block user-select-none" width="100%" height="100%"  style="font-size:1.125rem;text-anchor:middle">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+                <div class="card-footer text-muted">
+                  2 days ago
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- page content -->
+    <!-- Footer-->    
+    <footer class="py-5 navbar-dark first-color">   <!-- bg-dark -->
+
+
+         <!-- gornji footer -->   
+         
+         <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="text-white">Company </h3>
+                <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              </div>
+              <div class="col-md-4 text-white">
+                <h3> Links </h3>
+                <ul class="list-unstyled">
+                  <li><a href="#"> Link 1 </a></li>
+                  <li><a href="#"> Link 2 </a></li>
+                  <li><a href="#"> Link 3 </a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 text-white">
+                <h3> Contact </h3>
+                <ul class="list-unstyled">
+                  <li> Adresa: 123 Main Street, City, Country </li>
+                  <li> Tel: (123) 456-7890 </li>
+                  <li> Email: info@example.com </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+         <!-- gornji footer -->
+
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
         </div>
